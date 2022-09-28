@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>CriptoGET</title>
-  <title>CriptoGET</title>
+  
   <meta name="description" content="Web designer and front-end developer">
   <link href='https://fonts.googleapis.com/css?family=Raleway:100,200,400,600' rel='stylesheet' type='text/css'>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css" rel="stylesheet" type="text/css">
@@ -147,8 +147,29 @@
       <div class="contact-wrapper">
       
       <!-- Left contact page --> 
+      <form id="form" class="formul">
+        <div class="col-sm-12">
+          <input class="form-control" for="NOMBRE" type="text" name="Nombre" id="Nombre" placeholder="NOMBRE">
+        </div>
+
+        <div class="col-sm-12" >
+          <input class="form-control" type="email" name="Email" id="Email" placeholder="EMAIL">
+        </div>
+
+        <div class="col-sm-12">
+          <textarea name="Mensaje" class="form-control" rows="7" placeholder="MENSAJE" name="message" required></textarea>
+          
+        </div>
+       
+        <button class="btn btn-primary send-button" id="button" type="submit" value="Enviar Email">
+          <div class="alt-send-button">
+            <i class="fa fa-paper-plane"></i><span class="send-text">ENVIAR</span>
+          </div>
         
+        </button>
         
+      </form>
+<!--         
           <form action="https://formsubmit.co/your@email.com" method="POST" id="contact-form" class="form-horizontal" role="form">  
           <div class="form-group">
             <div class="col-sm-12">
@@ -171,7 +192,7 @@
           
           </button>
           
-        </form>
+        </form> -->
         
       <!-- Left contact page --> 
        
@@ -180,9 +201,9 @@
             <ul class="contact-list">
               <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Córdoba Capital, Argentina</span></i></li>
               
-              <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
+              <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:54 9 3512 50-3060" title="Give me a call">54 9 351 250-3060</a></span></i></li>
               
-              <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">hitmeup@gmail.com</a></span></i></li>
+              <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:criptoget.ok@gmail.com" title="Send me an email">criptoget.ok@gmail.com</a></span></i></li>
               
             </ul>
     
@@ -233,6 +254,11 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js'></script><script  src="./script.js"></script>
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
+<script type="text/javascript">
+  emailjs.init('9YwxhpcLwHK3ODupN')
+</script>
 </body>
 </html>
